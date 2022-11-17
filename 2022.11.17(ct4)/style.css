@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f0f0f0;
+}
+
+.header__logo {
+    height: 50px;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.hero__title {
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+.hero__text {
+    margin-top: 40px;
+}
+
+.hero__contributor {
+    margin: 40px 0 50px 0;
+    font-weight: 300;
+}
+
+.hero__contributor > a{
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.flex__item {
+    background-color: #f0f0f0;
+    width: 33%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #FFF;
+    padding: 0 10px;
+    transform: rotate(0);
+    transition: 0.5s;
+}
+
+.flex__item:hover{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.flex__img {
+    width: 150px;
+
+}
+
+.bc-blue {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.bc-green {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.bc-red {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.bg-img_1 {
+    background: url("img/aerial-view-business-data-analysis-graph.jpg") center center / cover;
+}
+
+.bg-img_2 {
+    background: url("img/skyscrapers-from-low-angle-view.jpg") center center / cover;
+}
+
+.bg-img_3 {
+    background: url("img/view-new-york-city-night-time.jpg") center center / cover;
+}
+
+.footer {
+    margin-top: 80px;
+    background-color: #333;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30%;
+}
+
+@media (max-width: 1200px) and (min-width: 576px) {
+    .flex__item {
+        width: calc(50% - 5px);
+    }
+
+    .footer {
+        padding: 10%;
+    }
+}
+
+@media (max-width:576px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex__item {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        padding: 1%;
+    }
+}
