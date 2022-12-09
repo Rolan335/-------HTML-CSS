@@ -1,0 +1,226 @@
+body {
+    font-family: sans-serif;
+    background-color: skyblue;
+    padding: 0;
+    margin: 0;
+}
+
+
+.wrapper {
+    margin-left: 10px;
+    margin-top: 200px;
+    position: relative;
+    width: 200px;
+    animation-name: ride;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(.18, 1.33, .43, .86);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ride {
+    100% {
+        transform: translateX(calc(100vw - 250px));
+    }
+}
+
+.tesla__top {
+    width: 175px;
+    height: 32px;
+    background-color: #000;
+    border-radius: 100% 1000% 0% 0% / 500% 1000% 0% 0%;
+    border: 1px solid #000;
+    transform: skew(-8deg) translate(1px, 15px);
+    position: relative;
+}
+
+/* .tesla__top::before {
+    content: '';
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    background-color: #fff;
+    left: 34px;
+    top: -10px;
+    z-index: 1;
+    border-radius: 0px 174% 0 0/ 0px 179% 0 0;
+} */
+
+.container {
+    position: relative;
+}
+
+.tesla__fara {
+    width: 14px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    right: 4px;
+    top: 4px;
+    transform: skew(63deg);
+    border-radius: 46%;
+}
+
+
+.tesla__window {
+    position: absolute;
+    width: 67px;
+    height: 15px;
+    background-color: #fff;
+    right: 34px;
+    top: 25px;
+    z-index: 1;
+    border-radius: 0px 100% 0 0/ 0px 98% 0 0;
+}
+
+.tesla__window_2 {
+    left: 29px;
+    width: 69px;
+    height: 21px;
+    top: 19px;
+    border-radius: 183% 251% 0% 0% / 189% 119% 0% 0%;
+    transform: skew(0deg);
+}
+
+
+.tesla__handle {
+    position: absolute;
+    width: 7px;
+    height: 2px;
+    background-color: #fff;
+    transform: skew(-2deg);
+    border-radius: 30%;
+    top: 18%;
+}
+
+.tesla__handle_1 {
+    right: 90px;
+}
+
+.tesla__handle_2 {
+    left: 43px
+}
+
+.tesla__center {
+    width: 200px;
+    height: 36px;
+    background-color: #000;
+    border: 5px solid #000;
+    border-radius: 7% 40% 20% 7%;
+    transform: skew(5.2deg);
+    position: relative;
+}
+
+.tesla__center::before {
+    content: '';
+    display: block;
+    background-color: skyblue;
+    width: 40px;
+    height: 40px;
+    transform: translate(15px, 20px) skew(-7deg);
+    border-radius: 95% 95% 50% 50%;
+}
+
+.tesla__center::after {
+    content: '';
+    display: block;
+    background-color: skyblue;
+    width: 40px;
+    height: 40px;
+    transform: translate(135px, -20px) skew(-7deg);
+    border-radius: 95% 95% 50% 50%;
+}
+
+.tesla__wheel {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 50%;
+    bottom: -14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tesla__wheel_1 {
+    transform: translate(25.7px);
+    animation-name: wheels1;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(.18, 1.33, .43, .86);
+    animation-delay: 2s;
+}
+
+@keyframes wheels1 {
+    100% {
+        transform: translate(25.7px) rotate(1080deg);
+    }
+}
+
+.tesla__wheel::before {
+    font-size: 42px;
+    content: '\2297';
+    color: #fff;
+    position: absolute;
+    top: -17px;
+}
+
+
+.tesla__wheel_2 {
+    transform: translate(145.7px);
+    animation-name: wheels2;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(.18, 1.33, .43, .86);
+    animation-delay: 2s;
+}
+
+@keyframes wheels2 {
+    100% {
+        transform: translate(145.7px) rotate(1080deg);
+    }
+}
+
+
+.charger {
+    width: 65px;
+    height: 125px;
+    background-color: transparent;
+    font-size: 14px;
+    padding-top: 0px;
+    text-align: center;
+    border-radius: 5%;
+    position: absolute;
+    z-index: 2;
+    bottom: -15px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.charger p {
+    z-index: 5;
+    position: relative;
+}
+
+.charger::before {
+    box-shadow: 0 0 0 5000px #efefef;
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    left: 5px;
+    bottom: 10px;
+    border: 5px solid red;
+    border-radius: 20%;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+}
+
+.ground {
+    width: 100%;
+    min-height: calc(100vh - 289px);
+    background-color: #000;
+    position: relative;
+    top: 10px;
+}
