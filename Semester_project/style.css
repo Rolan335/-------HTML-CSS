@@ -749,6 +749,13 @@ a {
 .giygas__text_1 {
     grid-column: 2/3;
     grid-row: 2/3;
+    animation-name: giygas_rotate;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    position: relative;
+    z-index: 2;
 }
 
 .giygas__ness {
@@ -761,24 +768,44 @@ a {
     grid-row: 2/3;
     grid-column: 3/4;
     width: 100%;
+    animation-name: giygas_pic;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
 .giygas__img_2 {
     grid-row: 3/4;
     grid-column: 1/4;
     width: 600px;
+    animation-name: giygas_pic;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
 .giygas__text_long {
     grid-row: 4/5;
     grid-column: 1/3;
     height: 100%;
+    animation-name: giygas_rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
 .giygas__text_long-2 {
     grid-row: 5/6;
     grid-column: 1/2;
     width: 50%;
+    animation-name: giygas_rotate;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
 .giygas_align_left {
@@ -806,7 +833,7 @@ a {
     grid-row: 9/10;
 }
 
-.footer{
+.footer {
     height: 100px;
     padding: 10px 10%;
     background-color: #000;
@@ -818,6 +845,33 @@ a {
     gap: 20px;
 }
 
+@keyframes giygas_pic {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes giygas_rotate {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+    50% {
+        transform: rotate(180deg) translate(300px, -600px);
+    }
+
+    100% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
 
 @media (max-width: 1200px) {
     .heroes-container {
