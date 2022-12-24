@@ -806,6 +806,19 @@ a {
     grid-row: 9/10;
 }
 
+.footer{
+    height: 100px;
+    padding: 10px 10%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
 @media (max-width: 1200px) {
     .heroes-container {
         grid-template-rows: 1fr;
