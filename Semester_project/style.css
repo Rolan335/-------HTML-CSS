@@ -964,7 +964,8 @@ a {
         margin-top: 40px;
         font-size: 40px;
     }
-    .hours{
+
+    .hours {
         font-size: 28px;
     }
 }
@@ -974,43 +975,58 @@ a {
         grid-template-rows: 300px 1fr 100px 80px 80px;
         padding: 40px 3%;
     }
-    .cultist__img{
+
+    .cultist__img {
         display: none;
     }
-    .cultist_1{
+
+    .cultist_1 {
         padding-top: 30px;
     }
-    .cultist__text-block{
+
+    .cultist__text-block {
         grid-column: 1/4;
     }
+
     .hero__title {
         min-width: 300px;
     }
-    .hours{
+
+    .hours {
         font-size: 24px;
     }
-    .giygas__title{
+
+    .giygas__title {
         font-size: 44px;
     }
-    .buy__title{
+
+    .buy__title {
         font-size: 34px;
     }
-    .buy{
+
+    .buy {
         display: flex;
         flex-direction: column;
         gap: 75px;
         padding-bottom: 100px;
     }
-    .buy__img_main{
+
+    .buy__img_main {
         max-width: 300px;
     }
-    .giygas{
+
+    .giygas {
         padding-bottom: 200px;
     }
-    .footer{
+
+    .footer {
         padding: 10px 3%;
         height: 150px;
         text-align: center;
+    }
+
+    .heroes__block:hover {
+        box-shadow: none;
     }
 }
 
