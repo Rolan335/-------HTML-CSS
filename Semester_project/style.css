@@ -656,7 +656,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
     padding: 20px;
     border-radius: 20px;
     outline: 2px solid #000;
@@ -686,7 +685,7 @@ a {
 }
 
 .hours {
-    height: 200px;
+    height: 250px;
     padding: 0 10%;
     display: flex;
     justify-content: center;
@@ -698,7 +697,8 @@ a {
 .giygas {
     background-image: url("img/giygas2.gif");
     position: relative;
-    padding: 50px 10% 300px;
+    padding: 75px 10% 300px;
+    overflow: hidden;
 }
 
 .giygas::before {
@@ -709,7 +709,6 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    /* background-color: rgba(0, 0, 0, 0.8); */
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 0;
 }
@@ -878,12 +877,140 @@ a {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
+
+    .buy {
+        grid-template-rows: 100px 550px 50px 400px 400px;
+    }
+
+    .buy-block {
+        gap: 20px;
+    }
+
+    .buy-block_2 {
+        grid-row: 4/5;
+        grid-column: 1/7;
+    }
+
+    .buy-block_3 {
+        grid-row: 5/6;
+        grid-column: 1/7;
+    }
+
+    .giygas {
+        overflow: hidden;
+    }
+
+    .heroes__block:hover {
+        transform: scale(1.2) !important;
+    }
 }
 
 @media (max-width: 992px) {
     .hero__title {
         font-size: 40px;
         min-width: 600px
+    }
+
+    .buy-block_1 {
+        grid-column: 1/7;
+    }
+
+    .buy__img_main {
+        width: 400px;
+    }
+
+    .buy {
+        padding: 10% 3%;
+        gap: 100px;
+    }
+
+}
+
+@media (max-width: 772px) {
+    .hero__title {
+        min-width: 400px;
+        font-size: 36px;
+    }
+
+    .heroes__block {
+        flex-direction: column !important;
+    }
+
+    .police {
+        grid-template-rows: 200px 1fr 100px 80px 80px;
+        gap: 20px 0;
+    }
+
+    .police__img img {
+        width: 320px;
+        justify-self: center;
+    }
+
+    .police__btn {
+        grid-column: 1/4;
+    }
+
+    .police__btn_slow {
+        grid-row: 5/6;
+        grid-column: 1/4;
+    }
+
+    .trigger__warning {
+        grid-column: 1/4;
+        margin-top: 0;
+    }
+
+    .police__title {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    .hours{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 552px) {
+    .police {
+        grid-template-rows: 300px 1fr 100px 80px 80px;
+        padding: 40px 3%;
+    }
+    .cultist__img{
+        display: none;
+    }
+    .cultist_1{
+        padding-top: 30px;
+    }
+    .cultist__text-block{
+        grid-column: 1/4;
+    }
+    .hero__title {
+        min-width: 300px;
+    }
+    .hours{
+        font-size: 24px;
+    }
+    .giygas__title{
+        font-size: 44px;
+    }
+    .buy__title{
+        font-size: 34px;
+    }
+    .buy{
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+        padding-bottom: 100px;
+    }
+    .buy__img_main{
+        max-width: 300px;
+    }
+    .giygas{
+        padding-bottom: 200px;
+    }
+    .footer{
+        padding: 10px 3%;
+        height: 150px;
+        text-align: center;
     }
 }
 
